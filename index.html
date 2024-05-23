@@ -9,7 +9,7 @@
 		<meta name="author" content="Joshua Onyeka" />
 		<meta
 			name="description"
-			content="We design digital products, services, and eCommerce experiences for brands" />
+			content="We design digital products, services, and eCommerce experiences for brands like Google, Airbnb, Patagonia, Apple, Beats by Dre and other category leaders." />
 		<meta
 			name="keywords"
 			content="website, web designs, projects, web projects, product design websites, service website, eCommerce experience for brand website" />
@@ -69,7 +69,7 @@
 						</nav>
 					</div>
 
-					<div class="initiatives">
+					<div class="initiatives open_initiative">
 						<i class="fa-solid fa-ellipsis"></i>
 					</div>
 				</div>
@@ -92,7 +92,158 @@
 
 		<!-- INITIATIVE SECTION STARTS -->
 		<div class="initiative" id="initiative">
-			<div class="initiative_container"> </div>
+			<div class="initiative_container">
+				<div class="init_head">
+					<div class="left box">
+						<div class="circle"></div>
+						<h3>
+							(5) INTERNAL WORKS <br />
+							&copy;24 c/o BASIC/DEPT®
+						</h3>
+						<p>
+							a collection of internal project and initiatives under the basic/dept®
+							brand.
+						</p>
+					</div>
+					<div class="right box">
+						<i class="fas fa-times close_initiative"></i>
+					</div>
+				</div>
+
+				<div class="init_items swiper mySwiper">
+					<div class="init_item_container swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="box">
+								<div class="number">1</div>
+								<div class="liner">
+									<div class="init_img">
+										<img src="img/Home_img/jams.jpg" alt="" />
+									</div>
+									<div class="init_desc">
+										<div class="name">
+											<h2>b/d® jams</h2>
+											<h2>&copy;2022</h2>
+										</div>
+										<p class="under_text">it's a vibe</p>
+										<div class="hidden_desc">
+											<p class="description">
+												A weekly-ish playlist curated bu the employees @
+												BASIC/DEPT®</p
+											>
+											<a href="">visit the site</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="box">
+								<div class="number">2</div>
+								<div class="liner">
+									<div class="init_img">
+										<img src="img/Home_img/applied.png" alt="" />
+									</div>
+									<div class="init_desc">
+										<div class="name">
+											<h2>applied® </h2>
+											<h2>&copy;2020</h2>
+										</div>
+										<p class="under_text">thoughts & perspective</p>
+										<div class="hidden_desc">
+											<p class="description">
+												Our panel series and thought-leadership platform
+												where we share perspectives and tactics related to
+												strategy, design, and technology.
+											</p>
+											<a href="">explore applied</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="box">
+								<div class="number">3</div>
+								<div class="liner">
+									<div class="init_img">
+										<img src="img/Home_img/moves.png" alt="" />
+									</div>
+									<div class="init_desc">
+										<div class="name">
+											<h2>moves® </h2>
+											<h2>&copy;2019</h2>
+										</div>
+										<p class="under_text">our new hq</p>
+										<div class="hidden_desc">
+											<p class="description">
+												When we moved into our new HQ, we put together a
+												site experience providing an in-depth look into
+												two-year process imagining, designing, and our new
+												office we call home</p
+											>
+											<a href="">visit site</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="box">
+								<div class="number">4</div>
+								<div class="liner">
+									<div class="init_img">
+										<img src="img/Home_img/crafted.png" alt="" />
+									</div>
+									<div class="init_desc">
+										<div class="name">
+											<h2>crafted® </h2>
+											<h2>&copy;2019</h2>
+										</div>
+										<p class="under_text">creative community</p>
+										<div class="hidden_desc">
+											<p class="description">
+												A communal initiative we operate to celebrate
+												diversity and creativity by bringing together people
+												from different backgrounds and interests.</p
+											>
+											<a href="">visit site</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="box">
+								<div class="number">5</div>
+								<div class="liner">
+									<div class="init_img">
+										<img src="img/Home_img/brandbeat.png" alt="" />
+									</div>
+									<div class="init_desc">
+										<div class="name">
+											<h2>bramdbeats® </h2>
+											<h2>&copy;2017</h2>
+										</div>
+										<p class="under_text">podcast series</p>
+										<div class="hidden_desc">
+											<p class="description">
+												Our podcast series garnering 45,000+ listens per
+												episode providing candid conversations around
+												various industry related topics.</p
+											>
+											<a href="">explore brandbeats</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<!-- INITIATIVE SECTION ENDS -->
 
@@ -701,6 +852,9 @@
 					</div>
 				</div>
 			</div>
+			<div class="last_footer">
+				<p>cloned by <span>Tuma.Dev</span> | all rights reserved</p>
+			</div>
 		</section>
 		<!-- FOOTER SECTION ENDS -->
 
@@ -717,7 +871,35 @@
 		<!-- Swiper JS -->
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-		<!-- Boxicon icon -->
-		<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+				slidesPerView: "2",
+				spaceBetween: 30,
+				autoplay: true,
+				loop: true,
+				breakpoints: {
+					320: {
+						slidesPerView: 1,
+						spaceBetween: 20,
+					},
+					480: {
+						slidesPerView: 1.2,
+						spaceBetween: 25,
+					},
+					768: {
+						slidesPerView: 2,
+						spaceBetween: 30,
+					},
+					1024: {
+						slidesPerView: 2.5,
+						spaceBetween: 35,
+					},
+					1200: {
+						slidesPerView: 2.5,
+						spaceBetween: 40,
+					},
+				},
+			});
+		</script>
 	</body>
 </html>

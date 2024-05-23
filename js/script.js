@@ -107,3 +107,20 @@ targetBox.addEventListener("mouseover", () => {
 targetBox.addEventListener("mouseout", () => {
 	targetArrow.classList.remove("fa-shake");
 });
+
+// CLOSE AND OPEN THE INITIATIVE SECTION
+const openInit = document.querySelector(".open_initiative");
+const closeInit = document.querySelector(".close_initiative");
+const initiative = document.querySelector(".initiative");
+
+openInit.addEventListener("click", () => {
+	initiative.classList.add("show");
+});
+
+closeInit.addEventListener("click", () => {
+	initiative.classList.remove("show");
+});
+
+// window.onscroll = function () {
+// 	initiative.classList.remove("show");
+// };

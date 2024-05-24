@@ -1,3 +1,18 @@
+// TO OPEN AND CLOSE THE INITIATIVE PAGE
+document.addEventListener("DOMContentLoaded", () => {
+	const element = document.getElementById("initiative");
+	const addButton = document.getElementById("open_initiative");
+	const removeButton = document.getElementById("close_initiative");
+
+	addButton.addEventListener("click", () => {
+		element.classList.add("show");
+	});
+
+	removeButton.addEventListener("click", () => {
+		element.classList.remove("show");
+	});
+});
+
 // TO MAKE THE NAVBAR DO WHAT ITS DOING WWHEN  YOU SCROLL
 const targetDiv = document.querySelector(".header");
 let prevScrollPosition = 0;

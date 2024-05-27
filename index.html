@@ -70,6 +70,9 @@
 					</div>
 
 					<div class="initiatives">
+						<div class="open_nav">
+							<h5 class="open_nav">menu</h5>
+						</div>
 						<i class="fa-solid fa-ellipsis" id="open_initiative"></i>
 					</div>
 				</div>
@@ -89,6 +92,31 @@
 			</div>
 		</div>
 		<!-- HOMEPAGE SECTION ENDS -->
+
+		<!-- RESPONSIVE NAVBAR -->
+		<div class="responsive_navbar">
+			<div class="head">
+				<div class="logo responsive">
+					<h1 class="logo_text responsive"><a href="index.html">BASIC/DEPT®</a></h1>
+				</div>
+				<div class="close_menu">
+					<h5>close</h5>
+				</div>
+			</div>
+
+			<div class="nav_items">
+				<nav>
+					<a href="work.html">work</a>
+					<a href="about.html">about</a>
+					<a href="news.html">news</a>
+					<a href="think.html">thinking</a>
+					<a href="career.html">careers</a>
+					<a href="contact.html">contact</a>
+					<h5 id="open_initiative">initiatives <i class="fa fa-angle-right"></i> </h5>
+				</nav>
+			</div>
+		</div>
+		<!-- RESPONSIVE NAVBAR -->
 
 		<!-- INITIATIVE SECTION STARTS -->
 		<div class="initiative" id="initiative">
@@ -441,6 +469,7 @@
 						</div>
 					</div>
 				</div>
+				<div class="swiper-pagination"></div>
 			</div>
 		</section>
 		<!-- ENGAGE SECTION ENDS -->
@@ -879,6 +908,7 @@
 
 		<!-- custom js file -->
 		<script src="js/script.js"></script>
+		<script src="js/main.js"></script>
 
 		<!-- Typed js -->
 		<script
@@ -894,8 +924,6 @@
 			var swiper = new Swiper(".mySwiper", {
 				slidesPerView: "2",
 				spaceBetween: 30,
-				autoplay: true,
-				loop: true,
 				breakpoints: {
 					320: {
 						slidesPerView: 1,
@@ -923,8 +951,10 @@
 			var swiper = new Swiper(".mySwiper2", {
 				slidesPerView: "3",
 				spaceBetween: 50,
-				autoplay: true,
-				loop: true,
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
 				breakpoints: {
 					320: {
 						slidesPerView: 1,
@@ -943,7 +973,7 @@
 						spaceBetween: 35,
 					},
 					1200: {
-						slidesPerView: 3.2,
+						slidesPerView: 3,
 						spaceBetween: 40,
 					},
 				},

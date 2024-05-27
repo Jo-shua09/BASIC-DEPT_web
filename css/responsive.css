@@ -1,13 +1,3 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	text-decoration: none;
-	text-transform: var(--transform-1);
-	border: none;
-	outline: none;
-	transition: var(--transition-3);
-}
 :root {
 	/* COLORS */
 	--black: #252422;
@@ -129,8 +119,14 @@
 		display: flex;
 		width: 100%;
 	}
-	.home h1 {
-		font-size: 7rem;
+	.home {
+		line-height: 7rem;
+	}
+	.home span {
+		font-size: 8rem;
+	}
+	.home span.fade_up {
+		font-size: 6rem;
 	}
 	.head_item p {
 		padding-left: 15rem;
@@ -175,17 +171,99 @@
 	.spotlight_container .box h1 {
 		font-size: 5rem;
 	}
+	.logo h1 a {
+		font-size: var(--fontSize-11);
+	}
+	.navigations,
+	.initiatives i {
+		display: none;
+	}
+	.initiatives h5 {
+		display: block;
+		font-size: var(--fontSize-3);
+	}
+	.responsive_navbar {
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-color: var(--black);
+		width: 100%;
+		padding: 4rem 6%;
+		height: 100vh;
+		z-index: 1000;
+	}
+	.responsive_navbar.show {
+		opacity: 1;
+		visibility: visible;
+		transform: translateX(0);
+	}
+	.responsive_navbar .head {
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+	}
+	.logo h1.responsive a {
+		color: var(--pink);
+	}
+	.initiatives h5 {
+		font-size: var(--fontSize-4);
+	}
+	.head .close_menu h5 {
+		font-size: var(--fontSize-4);
+		font-weight: var(--weight-3);
+		text-transform: var(--transform-2);
+		color: var(--pink);
+		cursor: pointer;
+	}
+	.responsive_navbar .nav_items {
+		margin-top: 7rem;
+	}
+	.nav_items nav {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+	.nav_items nav h5 {
+		font-size: var(--fontSize-4);
+		font-weight: var(--weight-3);
+		text-transform: var(--transform-2);
+		color: var(--pink);
+		cursor: pointer;
+	}
+	.nav_items nav a {
+		position: relative;
+		font-size: var(--fontSize-4);
+		font-weight: var(--weight-3);
+		text-transform: var(--transform-2);
+		color: var(--pink);
+	}
+	.nav_items nav h5:hover,
+	.nav_items nav a.active,
+	.nav_items nav a:hover {
+		letter-spacing: var(--letterSpacing-1);
+	}
+	.service_container .row_box::after {
+		left: -100%;
+	}
 }
 
 @media (max-width: 450px) {
 	html {
 		font-size: 50%;
 	}
-	.home h1 {
-		font-size: 4.5rem;
+	.home_body {
+		margin-top: 5rem;
 	}
-	.home h1 span {
+	.home {
+		line-height: 5rem;
+	}
+	.home span {
 		font-size: 6rem;
+	}
+	.home span.fade_up {
+		font-size: 4.5rem;
 	}
 	.head_item p {
 		padding-left: 10rem;

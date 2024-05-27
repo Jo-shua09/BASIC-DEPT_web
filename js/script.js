@@ -1,3 +1,11 @@
+// TO ADD ANIMATION TO THE WORK HOME SECTION  HEAD
+document.addEventListener("DOMContentLoaded", () => {
+	const elements = document.querySelectorAll(".fade_up");
+	elements.forEach((element, index) => {
+		element.classList.add("active");
+	});
+});
+
 // TO OPEN AND CLOSE THE INITIATIVE PAGE
 document.addEventListener("DOMContentLoaded", () => {
 	const element = document.getElementById("initiative");
@@ -34,31 +42,7 @@ const handleScroll = () => {
 	}
 	prevScrollPosition = scrollPosition;
 };
-
 window.addEventListener("scroll", handleScroll);
-
-// TO MAKE THE BACKGROUND VIDEO PLAY FROM BEGINNING ONCLICK OF THE BUTTON
-// document.addEventListener("DOMContentLoaded", function () {
-// 	const playButton = document.getElementById("play-button");
-// 	const backgroundVideo = document.getElementById("background-video");
-// 	const home_hide = document.getElementById("move_section");
-
-// 	// Set the initial video time to 10 seconds
-// 	backgroundVideo.currentTime = 10;
-
-// 	// Play the full video when the play button is clicked
-// 	playButton.addEventListener("click", function () {
-// 		backgroundVideo.currentTime = 0;
-// 		backgroundVideo.play();
-// 		home_hide.classList.toggle("remove");
-// 	});
-
-// 	// Loop the video when it ends, starting from 10 seconds
-// 	backgroundVideo.addEventListener("ended", function () {
-// 		backgroundVideo.currentTime = 10;
-// 		backgroundVideo.play();
-// 	});
-// });
 
 document.addEventListener("DOMContentLoaded", function () {
 	const playButton = document.getElementById("play-button");
@@ -93,8 +77,19 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // TO CHANGE THE BACKGROUNFD COLOUR OF THE SECTION
+const observer = new IntersectionObserver((entries) => {
+	entries.forEach((entry) => {
+		if (entry.isIntersecting) {
+			entry.target.classList.add("change");
+		} else {
+			entry.target.classList.remove("change");
+		}
+	});
+});
+const secTion = document.querySelectorAll("#spotlight");
+secTion.forEach((el) => observer.observe(el));
+
 const section = document.querySelector("#spotlight");
-const element1 = document.querySelector("#spotlight");
 const element2 = document.querySelector(".header");
 
 window.addEventListener("scroll", () => {
@@ -104,10 +99,8 @@ window.addEventListener("scroll", () => {
 	const scrollPosition = window.scrollY;
 
 	if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-		element1.classList.add("new-class");
 		element2.classList.add("new-class");
 	} else {
-		element1.classList.remove("new-class");
 		element2.classList.remove("new-class");
 	}
 });
@@ -123,19 +116,30 @@ targetBox.addEventListener("mouseout", () => {
 	targetArrow.classList.remove("fa-shake");
 });
 
-// CLOSE AND OPEN THE INITIATIVE SECTION
-const openInit = document.querySelector(".open_initiative");
-const closeInit = document.querySelector(".close_initiative");
-const initiative = document.querySelector(".initiative");
+// // CLOSE AND OPEN RESPONSIVE NAVBAR
+// const openNav = document.querySelector(".open_nav");
+// const closeNav = document.querySelector(".close_menu");
+// const respNav = document.querySelector(".responsive_navbar");
 
-openInit.addEventListener("click", () => {
-	initiative.classList.add("show");
-});
+// openNav.addEventListener("click", () => {
+// 	respNav.classList.add("show");
+// });
 
-closeInit.addEventListener("click", () => {
-	initiative.classList.remove("show");
-});
+// closeNav.addEventListener("click", () => {
+// 	respNav.classList.remove("show");
+// });
 
-// window.onscroll = function () {
+// // CLOSE AND OPEN SECTIONS
+// const openInit = document.querySelectorAll("#open_initiative");
+// const closeInit = document.querySelector(".close_initiative");
+// const initiative = document.querySelector(".initiative");
+
+// openInit.forEach((element) => {
+// 	element.addEventListener("click", () => {
+// 		initiative.classList.add("show");
+// 	});
+// });
+
+// closeInit.addEventListener("click", () => {
 // 	initiative.classList.remove("show");
-// };
+// });

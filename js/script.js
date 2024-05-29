@@ -1,3 +1,23 @@
+// TO CHANGE TABS IN THE WORK PAGE
+const tabs = document.querySelectorAll("[data-target]"),
+	tabContents = document.querySelectorAll("[content]");
+
+tabs.forEach((tab) => {
+	tab.addEventListener("click", () => {
+		const target = document.querySelector(tab.dataset.target);
+		tabContents.forEach((tabContent) => {
+			tabContent.classList.remove("active_tab");
+		});
+
+		target.classList.add("active_tab");
+
+		tabs.forEach((tab) => {
+			tab.classList.remove("active_tab");
+		});
+		tab.classList.add("active_tab");
+	});
+});
+
 // TO ADD ANIMATION TO THE WORK HOME SECTION  HEAD
 document.addEventListener("DOMContentLoaded", () => {
 	const elements = document.querySelectorAll(".fade_up");
@@ -143,3 +163,61 @@ targetBox.addEventListener("mouseout", () => {
 // closeInit.addEventListener("click", () => {
 // 	initiative.classList.remove("show");
 // });
+
+var swiper = new Swiper(".mySwiper", {
+	slidesPerView: "2",
+	spaceBetween: 30,
+	autoplay: true,
+	loop: true,
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 20,
+		},
+		480: {
+			slidesPerView: 1.2,
+			spaceBetween: 25,
+		},
+		768: {
+			slidesPerView: 2,
+			spaceBetween: 30,
+		},
+		1024: {
+			slidesPerView: 2.5,
+			spaceBetween: 35,
+		},
+		1200: {
+			slidesPerView: 2.5,
+			spaceBetween: 40,
+		},
+	},
+});
+
+var swiper = new Swiper(".mySwiper2", {
+	slidesPerView: "3",
+	spaceBetween: 50,
+	// autoplay: true,
+	// loop: true,
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 20,
+		},
+		480: {
+			slidesPerView: 1.1,
+			spaceBetween: 25,
+		},
+		768: {
+			slidesPerView: 2,
+			spaceBetween: 30,
+		},
+		1024: {
+			slidesPerView: 2.5,
+			spaceBetween: 35,
+		},
+		1200: {
+			slidesPerView: 3.2,
+			spaceBetween: 40,
+		},
+	},
+});

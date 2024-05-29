@@ -128,24 +128,21 @@
 	.home span.fade_up {
 		font-size: 6rem;
 	}
-	.head_item p {
-		padding-left: 15rem;
-	}
-	.column_box {
+	.service_container .column_box {
+		flex: 1 1 45rem;
 		gap: 5rem;
 		padding-bottom: 1rem;
 	}
 	.box .numbering {
-		padding-top: 1rem;
+		padding-top: 0rem;
+		margin-top: 1rem;
 	}
 	.row_box {
 		flex-wrap: wrap;
 		align-items: center;
 		gap: 2rem;
 	}
-	.showcase .showcase_container {
-		gap: 3rem;
-	}
+	.showcase .showcase_container,
 	.showcase_container .box a {
 		gap: 3rem;
 	}
@@ -156,16 +153,12 @@
 	.showcase_container .box p {
 		font-size: var(--fontSize-1);
 	}
+	.showcase_container .box .text h5,
 	.showcase_container .box h3 {
 		font-size: var(--fontSize-2);
 	}
+	.showcase_container .box .text span,
 	.showcase_container .box h3 span {
-		font-size: var(--fontSize-3);
-	}
-	.showcase_container .box .text h5 {
-		font-size: var(--fontSize-2);
-	}
-	.showcase_container .box .text span {
 		font-size: var(--fontSize-3);
 	}
 	.spotlight_container .box h1 {
@@ -247,6 +240,39 @@
 	.service_container .row_box::after {
 		left: -100%;
 	}
+	.box .numbering {
+		gap: 0rem;
+		justify-content: space-between;
+		width: 100%;
+		padding-bottom: 2rem;
+	}
+	.service_content .service_container {
+		gap: 0rem;
+	}
+	.column_box {
+		padding-bottom: 0rem;
+		height: 100%;
+	}
+	.service .service_head {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap-reverse;
+		justify-content: space-between;
+		gap: 5rem;
+	}
+	.service_head .head_item {
+		width: 100%;
+	}
+	.tabs_container {
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+		gap: 3rem;
+	}
+	.head_item p {
+		width: 70%;
+		float: right;
+	}
 }
 
 @media (max-width: 450px) {
@@ -288,5 +314,25 @@
 		margin-top: 5rem;
 		align-items: center;
 		width: 100%;
+	}
+	.row_box .service_one video,
+	.row_box .service_one img {
+		height: 55rem;
+		margin-bottom: 1rem;
+	}
+	.initiative .initiative_container {
+		gap: 3rem;
+	}
+	.initiative {
+		padding: 3rem;
+	}
+	.swiper.mySwiper {
+		display: none;
+	}
+	.init_container {
+		display: block;
+	}
+	.init_container .row {
+		margin-bottom: 5rem;
 	}
 }

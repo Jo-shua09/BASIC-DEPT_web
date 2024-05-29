@@ -79,6 +79,20 @@
 	html {
 		font-size: 55%;
 	}
+	section.present {
+		margin-top: 7rem;
+	}
+	.present_body .box:nth-child(1) {
+		flex: 1 1 45rem;
+		margin-top: 4rem;
+		width: 100%;
+	}
+	section.basic-dept {
+		padding-top: 1rem;
+	}
+	.presents .present_body {
+		padding-bottom: 1rem;
+	}
 }
 
 @media (max-width: 768px) {
@@ -257,6 +271,72 @@
 		width: 70%;
 		float: right;
 	}
+	.about .about_par p {
+		width: 70%;
+	}
+	section.present {
+		margin-top: 0rem;
+	}
+	.present .presents {
+		padding-top: 9rem;
+	}
+	.present_num .first {
+		flex: 1 1 40rem;
+	}
+	.present_body .box .image {
+		width: 65%;
+		height: auto;
+	}
+	.present_body .box .image img {
+		width: 100%;
+		height: 100%;
+	}
+	.present_body .box:nth-child(1) {
+		margin-top: 1rem;
+	}
+	.presents .present_body {
+		gap: 7rem;
+	}
+	.present_body .box p {
+		width: 30%;
+	}
+	.basic_item,
+	.basic_items .box:nth-child(1) {
+		flex: 1 1 45rem;
+		width: 100%;
+	}
+	.basic_item {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		gap: 5rem;
+	}
+	.basic_item .items {
+		flex: 1 1 45rem;
+		width: 100%;
+	}
+	.basic_item .hideen {
+		display: block;
+		flex: 1 1 10rem;
+		width: 100%;
+	}
+	.basic_dept .basic_banner h1 {
+		font-size: 7rem;
+	}
+	.box .basic_item h2 {
+		font-size: var(--fontSize-11);
+	}
+	.boxes_2 .basic_item:nth-child(2) {
+		margin-top: 0;
+		margin-bottom: 3.2rem;
+	}
+	.box_links {
+		margin-bottom: 3rem;
+	}
+	.box_links .link a {
+		font-size: 5rem;
+		line-height: var(--lineHeight-1);
+	}
 }
 
 @media (max-width: 450px) {
@@ -321,5 +401,34 @@
 	}
 	.head_item p {
 		width: 100%;
+	}
+	.present_body .box:nth-child(1) {
+		margin-top: 1rem;
+	}
+	.presents .present_body {
+		gap: 3rem;
+	}
+	.present_body .box p {
+		width: 50%;
+	}
+	.basic_dept .basic_banner h1 {
+		font-size: 6rem;
+	}
+	.about .about_par p {
+		width: 90%;
+	}
+	section.present {
+		margin-top: 0rem;
+	}
+	.boxes_2 .basic_item:nth-child(2) {
+		margin-top: 0;
+		margin-bottom: 6.5rem;
+	}
+	.box_links .link a {
+		font-size: 4rem;
+		line-height: 3rem;
+	}
+	.page_home.about {
+		padding-bottom: 0rem;
 	}
 }

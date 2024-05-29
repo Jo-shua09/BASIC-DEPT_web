@@ -246,7 +246,6 @@ header.header.new-class .initiatives i {
 	flex-wrap: nowrap;
 	align-items: center;
 	gap: 1rem;
-	margin-bottom: 1rem;
 }
 .initiatives i {
 	font-size: var(--fontSize-7);

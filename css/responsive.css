@@ -253,22 +253,6 @@
 		padding-bottom: 0rem;
 		height: 100%;
 	}
-	.service .service_head {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap-reverse;
-		justify-content: space-between;
-		gap: 5rem;
-	}
-	.service_head .head_item {
-		width: 100%;
-	}
-	.tabs_container {
-		display: flex;
-		flex-wrap: nowrap;
-		align-items: center;
-		gap: 3rem;
-	}
 	.head_item p {
 		width: 70%;
 		float: right;
@@ -334,5 +318,8 @@
 	}
 	.init_container .row {
 		margin-bottom: 5rem;
+	}
+	.head_item p {
+		width: 100%;
 	}
 }

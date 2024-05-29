@@ -1213,12 +1213,14 @@ section.service {
 }
 .service .service_head {
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap-reverse;
+	align-items: center;
 	justify-content: space-between;
 	gap: 5rem;
+	width: 100%;
 }
 .service_head .head_item {
+	flex: 1 1 45rem;
 	width: 100%;
 }
 .tabs_container {
@@ -1226,6 +1228,7 @@ section.service {
 	flex-wrap: nowrap;
 	align-items: center;
 	gap: 3rem;
+	width: 100%;
 }
 .tabs_container .tab_btn {
 	cursor: pointer;
@@ -1243,8 +1246,6 @@ section.service {
 	font-size: var(--fontSize-3);
 	font-weight: var(--weight-2);
 	text-transform: none;
-	width: 50%;
-	float: right;
 	line-height: var(--lineHeight-6);
 	color: var(--black);
 }

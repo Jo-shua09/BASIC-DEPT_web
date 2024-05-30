@@ -340,6 +340,19 @@
 	.box_par {
 		flex: 1 1 25rem;
 	}
+	.page_container.container_page {
+		height: 30%;
+	}
+	.page_home.home-page {
+		top: 65%;
+		height: 50%;
+	}
+	.tab_btn span.circle {
+		padding: 0.8rem;
+	}
+	.tab_btn span.text {
+		font-size: var(--fontSize-1);
+	}
 }
 
 @media (max-width: 450px) {
@@ -472,5 +485,15 @@
 	}
 	.boxes_2 .basic_item:nth-child(2) {
 		margin-bottom: 7rem;
+	}
+	.news_home.home span {
+		font-size: 7rem;
+	}
+	.news_head .tab_container {
+		gap: 2rem;
+		flex-wrap: wrap;
+	}
+	.tab_container .tab_btn {
+		gap: 0.7rem;
 	}
 }

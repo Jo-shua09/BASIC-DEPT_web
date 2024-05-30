@@ -763,7 +763,6 @@ header.header.new-class,
 .box .box_content .feature_img {
 	width: auto;
 	overflow: hidden;
-	/* border: 2px solid green; */
 }
 .box .box_content .feature_img img {
 	width: 45rem;
@@ -795,6 +794,7 @@ header.header.new-class,
 	font-weight: var(--weight-4);
 	text-transform: var(--transform-2);
 	font-size: var(--fontSize-3);
+	margin-right: 0.5rem;
 }
 .box .box_content .feature_desc h5 {
 	font-size: var(--fontSize-2);
@@ -1214,6 +1214,7 @@ img {
 .page_home {
 	position: absolute;
 	top: 28%;
+	width: 100%;
 	height: 100%;
 	padding: 0 6%;
 }
@@ -1299,6 +1300,7 @@ section.service {
 	line-height: var(--lineHeight-6);
 	color: var(--black);
 }
+
 .tab_item:not(.active_tab) {
 	display: none;
 }
@@ -1820,3 +1822,91 @@ section.basic-dept {
 }
 /* BASIC SECTION ENDS */
 /* ABOUT SETTTINGS ENDS */
+
+/* NEWS SETTINGS STARTS */
+/* NEWS HEAD STARTS */
+.page_container.container_page {
+	height: 60%;
+}
+.page_home.home-page {
+	top: 65%;
+	height: 50%;
+}
+.page_home .news_home {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 100%;
+	flex-direction: row;
+}
+.news_home.home span {
+	font-size: 13.5rem;
+}
+/* NEWS HEAD ENDS */
+
+/* NEWS NEWS STARTS */
+.news .news_container {
+	width: 100%;
+}
+.news_head .tab_container {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 3rem;
+	width: 100%;
+	margin-bottom: 4rem;
+}
+.tab_container .tab_btn {
+	position: relative;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	gap: 1rem;
+}
+.tab_btn span.circle {
+	background-color: transparent;
+	border: 0.1rem solid var(--black);
+	clip-path: none;
+	border-radius: var(--radius-3);
+	padding: 0.8rem;
+	position: relative;
+	cursor: pointer;
+}
+.tab_btn span.text {
+	color: var(--black);
+	font-size: var(--fontSize-2);
+	font-weight: var(--weight-2);
+	text-transform: var(--transform-2);
+}
+.tab_btn span.circle::after {
+	position: absolute;
+	content: "";
+	top: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	transform: translateY(15%);
+	background-color: var(--black);
+	width: 0;
+	height: 1.2rem;
+	border-radius: var(--radius-3);
+	transition: all 0.2s ease;
+}
+.tab_btn span.circle:hover::after {
+	width: 1.2rem;
+}
+.tab_btn.active_tab span.circle::before {
+	position: absolute;
+	content: "";
+	top: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	background-color: var(--black);
+	width: 100%;
+	height: 100%;
+	border-radius: var(--radius-3);
+	transition: all 0.2s ease;
+	z-index: 1;
+}
+/* NEWS NEWS ENDS */
+/* NEWS SETTINGS ENDS */

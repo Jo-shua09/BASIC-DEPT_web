@@ -1,4 +1,4 @@
-// TO CHANGE TABS IN THE WORK PAGE
+// TO SWITCH BETWEEN TABS
 const tabs = document.querySelectorAll("[data-target]"),
 	tabContents = document.querySelectorAll("[content]");
 

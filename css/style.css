@@ -1804,7 +1804,6 @@ section.basic-dept {
 .image_box:hover h3 span {
 	text-decoration: underline;
 }
-
 .image_box .img {
 	display: flex;
 	flex-wrap: nowrap;

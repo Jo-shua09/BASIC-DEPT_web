@@ -787,6 +787,7 @@ header.header.new-class,
 	text-transform: var(--transform-2);
 	line-height: var(--lineHeight-2);
 }
+
 .box:hover .box_content .feature_desc p {
 	text-decoration: underline;
 }
@@ -809,6 +810,14 @@ header.header.new-class,
 	animation: shake 0.5s;
 	animation-iteration-count: infinite;
 }
+.think .tab_btn span.text,
+.box .box_content .feature_desc h5,
+.box .box_content .arrow_view i,
+.box .box_content .feature_desc h5 span,
+.think .box .box_content .feature_desc p {
+	color: var(--pink);
+}
+
 @keyframes shake {
 	0% {
 		transform: translateX(0px);
@@ -1830,6 +1839,7 @@ section.basic-dept {
 }
 .page_home.home-page {
 	top: 65%;
+	left: 0;
 	height: 50%;
 }
 .page_home .news_home {
@@ -1861,6 +1871,7 @@ section.basic-dept {
 	flex-wrap: nowrap;
 	align-items: center;
 	gap: 1rem;
+	cursor: pointer;
 }
 .tab_btn span.circle {
 	background-color: transparent;
@@ -1870,6 +1881,9 @@ section.basic-dept {
 	padding: 0.8rem;
 	position: relative;
 	cursor: pointer;
+}
+.tab_btn span.circle {
+	border: 0.1rem solid var(--pink);
 }
 .tab_btn span.text {
 	color: var(--black);
@@ -1891,7 +1905,7 @@ section.basic-dept {
 	border-radius: var(--radius-3);
 	transition: all 0.2s ease;
 }
-.tab_btn span.circle:hover::after {
+.tab_btn:hover span.circle::after {
 	width: 1.2rem;
 }
 .tab_btn.active_tab span.circle::before {
@@ -1908,5 +1922,52 @@ section.basic-dept {
 	transition: all 0.2s ease;
 	z-index: 1;
 }
+.think .tab_btn span.circle::after,
+.think .tab_btn.active_tab span.circle::before {
+	background-color: var(--pink);
+}
+
 /* NEWS NEWS ENDS */
 /* NEWS SETTINGS ENDS */
+
+/* THINK SETTINGS STARTS */
+/* THINK HOMEPAGES STARTS */
+.page_home.think {
+	top: 35%;
+	left: 0;
+	height: 50%;
+}
+.think .box_container {
+	margin-top: 7rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	gap: 3rem 1.5rem;
+	width: 100%;
+}
+.box_container .box {
+	flex: 1 1 45rem;
+	width: 100%;
+}
+.box_container .box h3 {
+	text-transform: var(--transform-2);
+	font-weight: var(--weight-3);
+	color: var(--pink);
+	font-size: var(--fontSize-5);
+	padding-bottom: 1.5rem;
+}
+.box_container .box p {
+	text-transform: none;
+	line-height: var(--lineHeight-4);
+	color: var(--pink);
+	font-size: var(--fontSize-3);
+}
+section.think {
+	margin-top: -14rem;
+	background-color: var(--black);
+}
+.think .lineover {
+	border: 0.1rem solid var(--pink);
+}
+/* THINK HOMEPAGES ENDS */
+/* THINK SETTINGS ENDS */

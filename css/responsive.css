@@ -321,7 +321,7 @@
 		width: 100%;
 	}
 	.basic_dept .basic_banner h1 {
-		font-size: 7rem;
+		font-size: 6.5rem;
 	}
 	.box .basic_item h2 {
 		font-size: var(--fontSize-11);
@@ -347,11 +347,20 @@
 		top: 65%;
 		height: 50%;
 	}
+	.page_home.think {
+		top: 30%;
+	}
 	.tab_btn span.circle {
 		padding: 0.8rem;
 	}
 	.tab_btn span.text {
 		font-size: var(--fontSize-1);
+	}
+	.page_home.think {
+		top: 25%;
+	}
+	section.think {
+		margin-top: -4rem;
 	}
 }
 
@@ -422,7 +431,7 @@
 		width: 50%;
 	}
 	.basic_dept .basic_banner h1 {
-		font-size: 6rem;
+		font-size: 5rem;
 	}
 	.about .about_par p {
 		width: 90%;
@@ -495,5 +504,11 @@
 	}
 	.tab_container .tab_btn {
 		gap: 0.7rem;
+	}
+	.page_home.think {
+		top: 15%;
+	}
+	section.think {
+		margin-top: -8rem;
 	}
 }

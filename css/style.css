@@ -811,11 +811,11 @@ header.header.new-class,
 	animation-iteration-count: infinite;
 }
 .think .tab_btn span.text,
-.box .box_content .feature_desc h5,
-.box .box_content .arrow_view i,
-.box .box_content .feature_desc h5 span,
+.think .box .box_content .feature_desc h5,
+.think .box .box_content .arrow_view i,
+.think .box .box_content .feature_desc h5 span,
 .think .box .box_content .feature_desc p {
-	color: var(--pink);
+	color: var(--pink) !important;
 }
 
 @keyframes shake {

@@ -212,7 +212,7 @@ header.header.new-class .navigations nav a {
 .black_nav nav a {
 	color: var(--black);
 }
-.nav_items nav a::after,
+/* .nav_items nav a::after, */
 .black_nav nav a.active::after,
 .navigations nav a::after {
 	position: absolute;
@@ -443,6 +443,13 @@ header.header.new-class .initiatives i {
 .c_items .buttons .btn {
 	border: 0.1rem solid var(--pink);
 }
+.career .buttons .btn {
+	color: var(--pink);
+	border: 0.1rem solid var(--pink);
+}
+.career .buttons .btn i {
+	margin-left: 0.5rem;
+}
 .buttons .btn {
 	text-align: center;
 	align-items: center;
@@ -457,6 +464,7 @@ header.header.new-class .initiatives i {
 	position: relative;
 	overflow: hidden;
 }
+.career .buttons .btn:hover,
 .c_items .buttons .btn:hover,
 #spotlight.new-class .spotlight_container .box .buttons .btn:hover {
 	color: var(--black);
@@ -483,6 +491,7 @@ header.header.new-class .initiatives i {
 	border-radius: var(--radius-2);
 	transition: var(--transition-4);
 }
+.career .buttons .btn::after,
 .c_items .buttons .btn::after,
 #spotlight.new-class .spotlight_container .box .buttons .btn::after {
 	background-color: var(--pink);
@@ -1942,7 +1951,7 @@ section.basic-dept {
 	display: flex;
 	flex-wrap: wrap;
 	align-content: center;
-	gap: 3rem 1.5rem;
+	gap: 5rem 1.5rem;
 	width: 100%;
 }
 .box_container .box {
@@ -1971,3 +1980,93 @@ section.think {
 }
 /* THINK HOMEPAGES ENDS */
 /* THINK SETTINGS ENDS */
+
+/* CAREER SETTINGS STARTS */
+/* CAREER HOMEPAGE STARTS */
+.page_container.career {
+	height: 175%;
+}
+.page_home.career {
+	top: 13%;
+}
+.career .box_container {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	gap: 5rem;
+	width: 100%;
+}
+.box_container .box1:nth-child(1) {
+	flex: 1 1 15rem;
+	width: 100%;
+}
+.box_container .box1:nth-child(2) {
+	flex: 1 1 45rem;
+	width: 100%;
+}
+.career .box1 .intro {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	width: 100%;
+	margin-top: 8rem;
+}
+.box1 span {
+	font-size: 9rem;
+	color: var(--pink);
+	line-height: 7rem;
+	word-spacing: 7rem;
+	font-weight: var(--weight-4);
+	text-transform: var(--transform-2);
+}
+.box1 .p_text {
+	margin-top: 20rem;
+	width: 40%;
+}
+.text_desc h3,
+.p_text p {
+	font-size: var(--fontSize-2);
+	font-weight: var(--weight-2);
+	text-transform: var(--transform-2);
+	color: var(--pink);
+}
+.box1 .text_desc {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	gap: 10rem;
+	margin-top: 1.5rem;
+}
+/* CAREER HOMEPAGE ENDS */
+
+/* CAREER PAGE STARTS */
+section.career {
+	background-color: var(--black);
+	width: 100%;
+	margin-top: -12rem;
+}
+.career_container {
+	width: 49%;
+	float: right;
+	padding-bottom: 6rem;
+}
+.career_container .box {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	gap: 3rem;
+	flex-direction: row;
+	margin-bottom: 5rem;
+}
+.career_container p {
+	font-size: var(--fontSize-10);
+	font-weight: var(--weight-2);
+	color: var(--pink);
+	text-transform: none;
+}
+.career_container .box span {
+	font-size: var(--fontSize-12);
+	color: var(--pink);
+}
+/* CAREER PAGE ENDS */
+/* CAREER SETTINGS ENDS */

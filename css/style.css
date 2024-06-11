@@ -14,6 +14,7 @@
 	outline: none;
 	transition: var(--transition-3);
 }
+
 :root {
 	/* COLORS */
 	--black: #252422;
@@ -1515,6 +1516,9 @@ section.present {
 .about_lineover {
 	border: 0.1rem solid var(--pink);
 }
+.about_lineover.contact {
+	border: 0.1rem solid var(--black);
+}
 .present_num {
 	display: flex;
 	flex-wrap: nowrap;
@@ -1547,12 +1551,18 @@ section.present {
 	color: var(--pink);
 	text-transform: var(--transform-2);
 }
+.contact h5 {
+	color: var(--black) !important;
+}
 .about_circle {
 	background-color: var(--pink);
 	width: 1.3rem;
 	height: 1.3rem;
 	float: right;
 	clip-path: circle();
+}
+.contact .about_circle {
+	background-color: var(--black);
 }
 .presents .present_body {
 	display: flex;
@@ -2198,6 +2208,7 @@ section.career {
 	flex: 1 1 45rem;
 	width: 100%;
 }
+.follow_container .box h3,
 .contact_us_container .box h2 {
 	font-size: var(--fontSize-11);
 	font-weight: var(--weight-3);
@@ -2254,5 +2265,38 @@ section.career {
 	padding-top: 2rem;
 	border-top: 0.1rem solid var(--black);
 }
+.follow {
+	margin-top: 7rem;
+}
+.follow_container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: start;
+	gap: 20rem;
+	width: 100%;
+	margin-top: 7rem;
+}
+.follow_container .box h4 {
+	font-size: var(--fontSize-4);
+	font-weight: var(--weight-3);
+	color: var(--black);
+	text-transform: var(--transform-2);
+}
+.follow_container .box .links {
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.follow_container .box .links a {
+	font-size: var(--fontSize-3);
+	font-weight: var(--weight-2);
+	text-decoration: underline;
+	color: var(--black);
+}
+.follow_container .box .links a:hover {
+	text-decoration: none;
+}
+
 /* CONTACT US ITEMS ENDS */
 /* CONTACT SETTINGS ENDS */

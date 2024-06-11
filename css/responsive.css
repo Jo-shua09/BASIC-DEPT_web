@@ -657,6 +657,9 @@
 		font-size: var(--fontSize-1);
 		width: 100%;
 	}
+	.follow_container {
+		gap: 10rem;
+	}
 }
 
 @media (max-width: 430px) {
@@ -664,6 +667,6 @@
 		height: 100%;
 	}
 	.page_container.contact_container_page {
-		height: 150%;
+		height: 165%;
 	}
 }

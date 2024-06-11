@@ -14,15 +14,6 @@
 	--transform-1: capitalize;
 	--transform-2: uppercase;
 
-	/* GRADIENTS */
-	--loading-text-gradient: linear-gradient(
-		90deg,
-		transparent 0% 16.66%,
-		var(--black-3) 33.33% 50%,
-		transparent 66.66% 75%
-	);
-	--gradient-1: linear-gradient(to top, hsla(0, 0%, 0%, 0.9), hsla(0, 0%, 0%, 0.7), transparent);
-
 	/* FONT SIZES */
 	--fontSize-13: calc(1.3rem + 6.7vw);
 	--fontSize-12: calc(2rem + 2.5vw);
@@ -59,22 +50,15 @@
 	--letterSpacing-4: 0.3em;
 	--letterSpacing-5: 3px;
 
-	/* SHADOWS */
-	--shadow-1: 0px 0px 25px 0px hsla(0, 0%, 0%, 0.25);
-	--shadow-2: 1px 1px 5px rgba(0, 0, 0, 0.2);
-	--shadow-3: 1px 1px 10px rgba(0, 0, 0, 0.2);
-
 	/* BORDER RADIUS */
 	--radius-1: 0.5rem;
 	--radius-2: 24px;
 	--radius-3: 50%;
 
 	/* TRANSITIONS */
-	--transition-1: 250ms ease;
-	--transition-2: 500ms ease;
-	--transition-3: 1000ms ease;
 	--transition-4: all 0.5s ease;
 }
+
 @media (max-width: 991px) {
 	html {
 		font-size: 55%;
@@ -99,7 +83,6 @@
 	.work_container .box {
 		width: 100%;
 		height: auto;
-		flex: 1 1 30rem;
 	}
 	.work_container .box p {
 		width: 80%;
@@ -108,6 +91,7 @@
 		font-size: 15rem;
 		float: right;
 	}
+	.work_container .box,
 	.items .item {
 		flex: 1 1 30rem;
 	}
@@ -117,9 +101,13 @@
 	.spotlight_container .box h1 {
 		font-size: 7rem;
 	}
+	.initiatives h5,
 	.show {
 		display: block;
 	}
+	.career_container .box span,
+	.navigations,
+	.initiatives i,
 	.hide {
 		display: none;
 	}
@@ -171,6 +159,7 @@
 	.showcase_container .box h3 {
 		font-size: var(--fontSize-2);
 	}
+	.initiatives h5,
 	.showcase_container .box .text span,
 	.showcase_container .box h3 span {
 		font-size: var(--fontSize-3);
@@ -180,14 +169,6 @@
 	}
 	.logo h1 a {
 		font-size: var(--fontSize-11);
-	}
-	.navigations,
-	.initiatives i {
-		display: none;
-	}
-	.initiatives h5 {
-		display: block;
-		font-size: var(--fontSize-3);
 	}
 	.responsive_navbar {
 		position: fixed;
@@ -233,17 +214,16 @@
 		gap: 3rem;
 	}
 	.nav_items nav h5 {
-		font-size: var(--fontSize-4);
-		font-weight: var(--weight-3);
-		text-transform: var(--transform-2);
-		color: var(--pink);
 		cursor: pointer;
 	}
 	.nav_items nav a {
 		position: static;
-		font-size: var(--fontSize-4);
-		font-weight: var(--weight-3);
+	}
+	.nav_items nav h5,
+	.nav_items nav a {
 		text-transform: var(--transform-2);
+		font-weight: var(--weight-3);
+		font-size: var(--fontSize-4);
 		color: var(--pink);
 	}
 	.nav_items nav h5:hover,
@@ -323,6 +303,7 @@
 	.basic_dept .basic_banner h1 {
 		font-size: 6.5rem;
 	}
+	.career_container p,
 	.box .basic_item h2 {
 		font-size: var(--fontSize-11);
 	}
@@ -389,12 +370,6 @@
 	.career_container {
 		width: 100%;
 		float: none;
-	}
-	.career_container p {
-		font-size: var(--fontSize-11);
-	}
-	.career_container .box span {
-		display: none;
 	}
 }
 

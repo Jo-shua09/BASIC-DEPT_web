@@ -2180,6 +2180,8 @@ section.career {
 /* CONTACT US ITEMS STARTS */
 .contact_us {
 	width: 100%;
+	padding-top: 10rem;
+	padding-bottom: 10rem;
 }
 .contact_us_container {
 	display: flex;
@@ -2205,7 +2207,7 @@ section.career {
 .contact_us_container .box .box_items {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	gap: 4rem;
 }
 .contact_us_container .box .box_items .item {

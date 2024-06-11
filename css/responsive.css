@@ -59,6 +59,49 @@
 	--transition-4: all 0.5s ease;
 }
 
+@media (max-width: 1084px) {
+	.contact_us_container .box:nth-child(1) {
+		flex: 1 1 25rem;
+		border-right: 0.1rem solid var(--black);
+	}
+	.content .items:nth-child(1) {
+		gap: 5rem;
+	}
+	.contact_us_container .box .box_items .item .image img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+@media (max-width: 1012px) {
+	.page_container.contact_container_page {
+		height: 155%;
+	}
+	.page_home.contact {
+		top: 8.5%;
+		height: auto;
+	}
+	.contact_contain .contact_container {
+		gap: 2rem;
+	}
+	.contents p,
+	.contact_container .contents {
+		margin-top: 4rem;
+	}
+	.contents .content {
+		margin-top: 5rem;
+	}
+	.content .item:nth-child(1) {
+		flex: 1 10rem;
+		width: 100%;
+	}
+	.contact_container .box .image img {
+		width: 100%;
+		height: 50%;
+		object-fit: cover;
+	}
+}
+
 @media (max-width: 991px) {
 	html {
 		font-size: 55%;
@@ -76,6 +119,25 @@
 	}
 	.presents .present_body {
 		padding-bottom: 1rem;
+	}
+	.contact_us_container .box:nth-child(1) {
+		flex: 1 1 15rem;
+	}
+	.content .items:nth-child(1) {
+		gap: 6rem;
+	}
+	.page_container.contact_container_page {
+		height: 140%;
+	}
+	.page_home.contact {
+		top: 8.5%;
+		height: auto;
+	}
+}
+
+@media (max-width: 824px) {
+	.page_container.contact_container_page {
+		height: 165%;
 	}
 }
 
@@ -371,6 +433,27 @@
 		width: 100%;
 		float: none;
 	}
+	.page_container.contact_container_page {
+		height: 175%;
+	}
+	.page_home.contact {
+		top: 9.5%;
+	}
+	.contents .content {
+		margin-top: 5rem;
+	}
+	.content .item:nth-child(1) {
+		flex: 1 10rem;
+		width: 100%;
+	}
+	.contact_container .box .image img {
+		width: 100%;
+		height: 50%;
+		object-fit: cover;
+	}
+	.contact_us_container .box .box_items .item {
+		gap: 1rem;
+	}
 }
 
 @media (max-width: 550px) {
@@ -385,6 +468,16 @@
 	}
 	.box1 .p_text {
 		width: 40%;
+	}
+	.page_container.contact_container_page {
+		height: 195%;
+	}
+	.contact_container .box .image img {
+		height: 80%;
+		object-fit: cover;
+	}
+	.contact_us_container .box:nth-child(1) {
+		border: none;
 	}
 }
 
@@ -546,5 +639,12 @@
 	}
 	.box1 .p_text {
 		width: 40%;
+	}
+	.contact_us_container .box .box_items .item p {
+		font-size: var(--fontSize-1);
+		width: 90%;
+	}
+	.page_container.contact_container_page {
+		height: 185%;
 	}
 }

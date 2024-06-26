@@ -1,3 +1,13 @@
+let load = document.querySelector(".loader");
+window.onload = function () {
+	setTimeout(() => {
+		load.classList.add("hide");
+	}, 1000);
+};
+// document.querySelector(body).addEventListener("onload", () => {
+// 	load.classList.add("hide");
+// });
+
 // CLOSE AND OPEN RESPONSIVE NAVBAR
 const openNav = document.querySelector(".open_nav");
 const closeNav = document.querySelector(".close_menu");
